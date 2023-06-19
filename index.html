@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pre-Entrega2 - Lautaro Iglesias</title>
+</head>
+<body>
+   
+    <header class="gridIndex">
+    
+     <img class="imagen-personaje img-fluid" src="img/npc.gif" alt="imagen-npc">  
+     <div class="texto">
+     <h1>¡Hola querido compañero de aventuras! ¿Te animas a ayudarme en lo que sigue?</h1>
+     <h2>¿Deseas comprar algo?</h2>   
+     <!-- Lista con los items que el jugador quiera comprar  -->
+        <ul>
+            <li onclick="comprar(espada)">Espada</li>
+            <li onclick="comprar(comida)">Comida</li>
+            <li onclick="comprar(artilugio)">Pocion de vida</li>
+        </ul>
+
+    </div> 
+    <!-- Inventario en donde van a aparecer los item y ademas la cantidad de oro que va a tener el jugador -->
+    <section class="inventario">
+        <h1>Inventario</h1>
+        <ul id="inventario">
+            <!-- Aca vamos a cargar los items que com -->
+        </ul>
+        <h1>Oro: <span id="oro"></span></h1>
+    </section>
+
+    </header>
+    
+     <script src="app.js"></script>
+</body>
+</html>
